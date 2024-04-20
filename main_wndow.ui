@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1575</width>
+    <height>822</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(61, 56, 70);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-20</y>
+      <width>1561</width>
+      <height>811</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::PreventContextMenu</enum>
+    </property>
+    <property name="accessibleName">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Anket&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>Test</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>0</y>
+        <width>231</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Orgin Image</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>190</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>411</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Orgin Image</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>0</y>
+        <width>421</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Orgin Image</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>0</y>
+        <width>421</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Orgin Image</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>470</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Prev Image</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images/images.qrc">
+        <normaloff>:/images/Oxygen-Icons.org-Oxygen-Actions-go-previous.32.png</normaloff>:/images/Oxygen-Icons.org-Oxygen-Actions-go-previous.32.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>630</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Save</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images/images.qrc">
+        <normaloff>:/images/Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-XML-01.48.png</normaloff>:/images/Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-XML-01.48.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>550</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next Image</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images/images.qrc">
+        <normaloff>:/images/Oxygen-Icons.org-Oxygen-Actions-go-next.32.png</normaloff>:/images/Oxygen-Icons.org-Oxygen-Actions-go-next.32.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>230</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images/images.qrc">
+        <normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>390</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>  Save Dir</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images/images.qrc">
+        <normaloff>:/images/Custom-Icon-Design-Pretty-Office-7-Save.32.png</normaloff>:/images/Custom-Icon-Design-Pretty-Office-7-Save.32.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>310</y>
+        <width>241</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open Dir</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images/images.qrc">
+        <normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>410</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>lowH</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>440</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>highS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>710</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MORPH_OPEN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>highH</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>470</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>lowS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>500</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>highV</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>590</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>thresh_min</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>530</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>lowV</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>620</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>kernel_size</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>650</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>erode</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>740</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>MORPH_CLOSE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>560</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>thresh_max</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>680</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>dilate</string>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_17">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>680</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>380</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>410</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_3">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>440</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_18">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>590</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_15">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>710</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_5">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>530</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_14">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>620</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_6">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>500</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_19">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>740</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_13">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>560</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_4">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>470</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QSlider" name="horizontalSlider_16">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>650</y>
+        <width>221</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>350</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;                Morphological-Transformations&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1575</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
