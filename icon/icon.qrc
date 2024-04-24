@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>Oxygen-Icons.org-Oxygen-Actions-go-previous.32.png</file>
+    <file>Oxygen-Icons.org-Oxygen-Actions-go-next.32.png</file>
+    <file>Hopstarter-Mac-Folders-Documents.32.png</file>
+    <file>Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-XML-01.48.png</file>
+    <file>Custom-Icon-Design-Pretty-Office-7-Save.32.png</file>
+  </qresource>
+</RCC>

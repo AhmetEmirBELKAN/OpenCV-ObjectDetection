@@ -7,8 +7,26 @@
     <x>0</x>
     <y>0</y>
     <width>1575</width>
-    <height>822</height>
+    <height>864</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1575</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1575</width>
+    <height>864</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -17,20 +35,41 @@
    <string notr="true">background-color: rgb(61, 56, 70);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>1575</width>
+     <height>757</height>
+    </size>
+   </property>
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>-20</y>
+      <y>0</y>
       <width>1561</width>
-      <height>811</height>
+      <height>751</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>751</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1561</width>
+      <height>751</height>
+     </size>
     </property>
     <property name="contextMenuPolicy">
      <enum>Qt::PreventContextMenu</enum>
     </property>
     <property name="accessibleName">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Anket&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -39,83 +78,71 @@
      <attribute name="title">
       <string>Test</string>
      </attribute>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="origin_images_label">
       <property name="geometry">
        <rect>
-        <x>1310</x>
+        <x>1260</x>
         <y>0</y>
-        <width>231</width>
-        <height>181</height>
+        <width>291</width>
+        <height>151</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:3px solid black</string>
       </property>
       <property name="text">
        <string>Orgin Image</string>
       </property>
      </widget>
-     <widget class="QTextEdit" name="textEdit">
+     <widget class="QTextEdit" name="origin_images_name_lbl">
       <property name="geometry">
        <rect>
-        <x>1310</x>
-        <y>190</y>
-        <width>241</width>
+        <x>1260</x>
+        <y>150</y>
+        <width>291</width>
         <height>31</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border:3px solid black</string>
+      </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="Object_Detection_Canvas">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>411</width>
-        <height>341</height>
+        <width>1251</width>
+        <height>631</height>
        </rect>
       </property>
-      <property name="text">
-       <string>Orgin Image</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>430</x>
-        <y>0</y>
-        <width>421</width>
-        <height>341</height>
-       </rect>
+      <property name="styleSheet">
+       <string notr="true">border:3px solid black</string>
       </property>
       <property name="text">
-       <string>Orgin Image</string>
+       <string>Object Detection</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_7">
+     <widget class="QPushButton" name="btn_opendir">
       <property name="geometry">
        <rect>
-        <x>870</x>
-        <y>0</y>
-        <width>421</width>
-        <height>341</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Orgin Image</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_5">
-      <property name="geometry">
-       <rect>
-        <x>1310</x>
-        <y>470</y>
-        <width>241</width>
+        <x>220</x>
+        <y>640</y>
+        <width>201</width>
         <height>71</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 15px;
+background-color: rgb(38, 162, 105);
+border:2px solid black;</string>
+      </property>
       <property name="text">
-       <string>Prev Image</string>
+       <string>Open DIr</string>
       </property>
       <property name="icon">
-       <iconset resource="images/images.qrc">
-        <normaloff>:/images/Oxygen-Icons.org-Oxygen-Actions-go-previous.32.png</normaloff>:/images/Oxygen-Icons.org-Oxygen-Actions-go-previous.32.png</iconset>
+       <iconset>
+        <normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -124,66 +151,483 @@
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_6">
+     <widget class="QTabWidget" name="tabWidget_2">
       <property name="geometry">
        <rect>
-        <x>1310</x>
-        <y>630</y>
-        <width>241</width>
-        <height>71</height>
+        <x>1260</x>
+        <y>180</y>
+        <width>301</width>
+        <height>541</height>
        </rect>
       </property>
-      <property name="text">
-       <string>Save</string>
+      <property name="currentIndex">
+       <number>0</number>
       </property>
-      <property name="icon">
-       <iconset resource="images/images.qrc">
-        <normaloff>:/images/Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-XML-01.48.png</normaloff>:/images/Hopstarter-Adobe-Cs4-File-Adobe-Dreamweaver-XML-01.48.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
-      </property>
+      <widget class="QWidget" name="tab_13">
+       <attribute name="title">
+        <string>Morphological Operations</string>
+       </attribute>
+       <widget class="QTextEdit" name="textEdit_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>580</y>
+          <width>1001</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1011</width>
+          <height>221</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lowH_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;lowH (000/255)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="highH_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;highH (000/255)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="highH_label_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>80</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;lowS (000/255)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="lowH_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>0</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+        <property name="tickInterval">
+         <number>0</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="highV_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>200</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;highV&lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt; (000/255)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="highS_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>120</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;highS (000/255)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lowV_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>160</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;lowV (000/255)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="kernel_size_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>310</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;kernel_size (000/20)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="thresh_min_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>230</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;thresh_min ()&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="thresh_max_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>270</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;thresh_max()&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="MORPH_OPEN_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>430</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;MORPH_OPEN (00/10)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="erode_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>350</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;erode&lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt; (00/10)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="dilate_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>390</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;dilate&lt;/span&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt; (00/10)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="MORPH_CLOSE_label">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>470</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;MORPH_CLOSE (00/10)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QSlider" name="highH_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>40</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="lowS_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>80</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="highS_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>120</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="lowV_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>160</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="highV_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>200</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="thresh_min_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>240</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="thresh_max_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>280</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="kernel_size_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>320</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>20</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="erode_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>360</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="dilate_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>400</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="MORPH_OPEN_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>440</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+       <widget class="QSlider" name="MORPH_CLOSE_trackbar">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>480</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="tickPosition">
+         <enum>QSlider::TicksBothSides</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Capture</string>
+       </attribute>
+      </widget>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="btn_open">
       <property name="geometry">
        <rect>
-        <x>1310</x>
-        <y>550</y>
-        <width>241</width>
+        <x>10</x>
+        <y>640</y>
+        <width>201</width>
         <height>71</height>
        </rect>
       </property>
-      <property name="text">
-       <string>Next Image</string>
-      </property>
-      <property name="icon">
-       <iconset resource="images/images.qrc">
-        <normaloff>:/images/Oxygen-Icons.org-Oxygen-Actions-go-next.32.png</normaloff>:/images/Oxygen-Icons.org-Oxygen-Actions-go-next.32.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>1310</x>
-        <y>230</y>
-        <width>241</width>
-        <height>71</height>
-       </rect>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 15px;
+background-color: rgb(38, 162, 105);
+border:2px solid black</string>
       </property>
       <property name="text">
        <string>Open</string>
       </property>
       <property name="icon">
-       <iconset resource="images/images.qrc">
+       <iconset>
         <normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</iconset>
       </property>
       <property name="iconSize">
@@ -193,43 +637,25 @@
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="btn_change_save_dir">
       <property name="geometry">
        <rect>
-        <x>1310</x>
-        <y>390</y>
-        <width>241</width>
+        <x>430</x>
+        <y>640</y>
+        <width>201</width>
         <height>71</height>
        </rect>
       </property>
-      <property name="text">
-       <string>  Save Dir</string>
-      </property>
-      <property name="icon">
-       <iconset resource="images/images.qrc">
-        <normaloff>:/images/Custom-Icon-Design-Pretty-Office-7-Save.32.png</normaloff>:/images/Custom-Icon-Design-Pretty-Office-7-Save.32.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>32</width>
-        <height>32</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="geometry">
-       <rect>
-        <x>1310</x>
-        <y>310</y>
-        <width>241</width>
-        <height>71</height>
-       </rect>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 15px;
+background-color: rgb(38, 162, 105);
+border:2px solid black</string>
       </property>
       <property name="text">
-       <string>Open Dir</string>
+       <string>Change Save Dir</string>
       </property>
       <property name="icon">
-       <iconset resource="images/images.qrc">
+       <iconset>
         <normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</iconset>
       </property>
       <property name="iconSize">
@@ -239,359 +665,88 @@
        </size>
       </property>
      </widget>
-     <widget class="QLabel" name="label_9">
+     <widget class="QPushButton" name="btn_next_image">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>410</y>
-        <width>121</width>
-        <height>21</height>
+        <x>640</x>
+        <y>640</y>
+        <width>201</width>
+        <height>71</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 15px;
+background-color: rgb(38, 162, 105);
+border:2px solid black;</string>
       </property>
       <property name="text">
-       <string>lowH</string>
+       <string>Next Image</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
       </property>
      </widget>
-     <widget class="QLabel" name="label_10">
+     <widget class="QPushButton" name="btn_prev_image">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>440</y>
-        <width>121</width>
-        <height>21</height>
+        <x>850</x>
+        <y>640</y>
+        <width>201</width>
+        <height>71</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 15px;
+background-color: rgb(38, 162, 105);
+border:2px solid black;</string>
       </property>
       <property name="text">
-       <string>highS</string>
+       <string>Prev Image</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
       </property>
      </widget>
-     <widget class="QLabel" name="label_32">
+     <widget class="QPushButton" name="btn_Save">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>710</y>
-        <width>121</width>
-        <height>21</height>
+        <x>1060</x>
+        <y>640</y>
+        <width>201</width>
+        <height>71</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 15px;
+background-color: rgb(38, 162, 105);
+border:2px solid black</string>
       </property>
       <property name="text">
-       <string>MORPH_OPEN</string>
+       <string>Save</string>
       </property>
-     </widget>
-     <widget class="QLabel" name="label_5">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>380</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</normaloff>:/images/Hopstarter-Mac-Folders-Documents.32.png</iconset>
       </property>
-      <property name="text">
-       <string>highH</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_12">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>470</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>lowS</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_13">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>500</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>highV</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_35">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>590</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>thresh_min</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_11">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>530</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>lowV</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_34">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>620</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>kernel_size</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_31">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>650</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>erode</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_37">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>740</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>MORPH_CLOSE</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_33">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>560</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>thresh_max</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_36">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>680</y>
-        <width>121</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>dilate</string>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_17">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>680</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>380</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_2">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>410</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_3">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>440</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_18">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>590</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_15">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>710</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_5">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>530</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_14">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>620</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_6">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>500</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_19">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>740</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_13">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>560</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_4">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>470</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_16">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>650</y>
-        <width>221</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QTextEdit" name="textEdit_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>350</y>
-        <width>361</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;                Morphological-Transformations&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
       </property>
      </widget>
     </widget>
